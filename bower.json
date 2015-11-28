@@ -1,7 +1,9 @@
 {
-    "name": "bubblesort",
-    "dependencies": {
-        "materialize": "latest",
-        "angular": "latest",
-    }
+  "name": "bubblesort",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "1.4.8",
+    "materialize": "latest"
+  },
+  "devDependencies": {}
 }
