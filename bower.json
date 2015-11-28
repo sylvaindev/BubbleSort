@@ -1,0 +1,7 @@
+{
+    "name": "bubblesort",
+    "dependencies": {
+        "materialize": "latest",
+        "angular": "latest",
+    }
+}
