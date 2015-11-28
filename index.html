@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--info-->
+  <meta charset="UTF-8">
+  <title>Bubble Sort</title>
+
+  <!--Display-->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Style-->
+  <link type="text/css" rel="stylesheet" media="screen" href="bower_components/materialize/dist/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" media="screen" href="style.css">
+
+</head>
+
+<body ng-controller="mainCtrl" ng-app="app">
+
+  <div class="quantity">
+    <div class="input-field">
+      <i class="material-icons prefix">create</i>
+      <label for="quantity">Quantity</label>
+      <input id="quantity" type="number" class="validate" ng-model="quantity">
+    </div>
+  </div>
+
+  <div class="button">
+    <button ng-click="generate()" class="waves-effect waves-light btn">Generate</button>
+    <button ng-click="sort()" class="waves-effect waves-light btn">Sort</button>
+    <button ng-click="optimizedSorting()" class="waves-effect waves-light btn">Optimized Sorting</button>
+  </div>
+
+  <div class="container z-depth-1" >
+    <div class="items">
+      <div class="item z-depth-2" ng-repeat="element in data track by $index" style="background-color: {{ element.color }}" id="bubble_{{ $index }}">
+        <span class="item-num">{{ element.val }}</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
+  <script src="main.js"></script>
+  <script src="rainbowvis.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html {
+  background: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container,
+body,
+html {
+  height: 100%;
+}
+
+.container {
+  min-width: 73% !important;
+  height: auto;
+  margin: 0 auto;
+  background: whitesmoke;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 6px;
+}
+
+.items {
+  animation: animateItem 0.5s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.items .item {
+  border-radius: 70%;
+  color: black;
+  text-align: center;
+  min-width: 70px;
+  line-height: 70px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.items .item:hover{
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+}
+
+body > div.quantity{
+  text-align: center;
+  padding-top: 30px;
+}
+
+.input-field label{
+  left: auto;
+}
+
+#quantity{
+  width: 30%;
+}
+
+.button{
+  text-align: center;
+  margin-top: 20px;
+}
