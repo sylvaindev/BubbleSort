@@ -39,11 +39,20 @@ html {
   border-radius: 6px;
 }
 
-#toast-container{
-  min-width: 8%;
-  top: 3%;
-  right: 1%;
-  left: 7%;
+@media only screen and (min-width: 993px){
+  #toast-container{
+    min-width: 8%;
+    top: 3%;
+    right: 1%;
+    left: 7%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  #toast-container {
+      min-width: 100% !important;
+      bottom: 0% !important;
+  }
 }
 
 .items {
