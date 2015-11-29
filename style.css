@@ -11,14 +11,39 @@ html {
   height: 100%;
 }
 
+.logo{
+  height: 65px;
+}
+
+.logo img{
+  width: 70px;
+  height: auto;
+  padding: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .logo{
+    height: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
 .container {
   min-width: 73% !important;
   height: auto;
   margin: 0 auto;
   background: whitesmoke;
   padding: 25px;
-  margin-top: 25px;
+  margin-top: 20px;
   border-radius: 6px;
+}
+
+#toast-container{
+  min-width: 8%;
+  top: 3%;
+  right: 1%;
+  left: 7%;
 }
 
 .items {
@@ -35,6 +60,7 @@ html {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+
 }
 
 .items .item {
@@ -52,11 +78,11 @@ html {
   -moz-transform: scale(1.2);
   -o-transform: scale(1.2);
   -ms-transform: scale(1.2);
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 body > div.quantity{
   text-align: center;
-  padding-top: 30px;
 }
 
 .input-field label{
@@ -67,7 +93,24 @@ body > div.quantity{
   width: 30%;
 }
 
-.button{
+.quantity > div > button{
+  margin-left: 20px;
+}
+
+.buttons{
   text-align: center;
   margin-top: 20px;
+}
+
+.buttons button{
+  margin: 5px;
+}
+
+.sort-move-current {
+  color: #FFF !important;
+}
+
+.sort-move-next {
+  /*color: #0F0 !important;
+  font-size: 1.5em;*/
 }
